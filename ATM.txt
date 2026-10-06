@@ -1,0 +1,37 @@
+Aim:
+The primary aim of an ATM (Automated Teller Machine) system is to provide bank customers with 24/7, self-service access to financial transactions without needing to visit a physical bank branch or interact with a human teller.
+
+Problem Statement:
+Traditional banking systems force customers to conduct routine transactions exclusively during limited working hours inside physical bank branches, causing long queues, wasted time, and high operational costs for banks.
+There is a need for a reliable, automated software and hardware system—an Automated Teller Machine (ATM)—that allows authorized users to independently and securely perform financial operations (such as withdrawing cash, checking balances, and transferring funds) at any time of day via a networked terminal.
+
+Objectives:
+• 24/7 Availability: Offer continuous, uninterrupted banking services outside standard branch working hours, including weekends and holidays.
+• Convenience and Speed: Reduce transaction time and eliminate long queue wait-times inside physical bank branches.
+• Cost Reduction for Banks: Lower operational overhead and administrative costs by automating routine teller tasks.
+• Decentralized Access: Enable banking reach in remote or offsite locations (such as shopping malls, airports, and petrol stations) where full bank branches are not feasible.
+• Security and Authentication: Protect customer accounts through multi-factor checks, combining physical/digital cards or QR codes with encrypted Personal Identification Numbers (PINs) and secure host communication.
+• Comprehensive Self-Service: Support a wide range of automated operations, including cash dispensing, cash/cheque deposits, fund transfers, bill payments, mini-statements, and PIN changes.
+• Workload Relief: Ease the day-to-day workload on bank employees so staff can focus on complex financial advisory and relationship banking.
+
+Software Requirement Specification(SRS):
+• Purpose: Specify software behaviors and hardware interfaces for distributed ATMs connecting to a central bank database.
+• Scope: Handles card/PIN validation, balance inquiries, cash withdrawals, deposits, and fund transfers.
+• Actors: Bank Customer, System Administrator, Central Bank Database.
+
+1)Functional Requirements:
+• Authentication: Validates customer card data and requires a matching 4-digit PIN (Personal Identification Number) with a maximum of 3 retries before locking the card or account.
+• Core Transactions:
+	• Balance Inquiry: Fetches real-time account balances from the central database.
+	• Cash Withdrawal: Dispenses cash after verifying account balance and daily withdrawal limits.
+	• Deposits: Accepts cash/checks and updates records (subject to manual operator verification if required).
+	• Fund Transfers: Moves money between intra-bank or inter-bank accounts.
+
+2)External Interface Requirements:
+• User Interface: Touchscreen or keypad-based multilingual display optimized for high usability.
+• Hardware Interfaces: Integration with a magnetic/chip card reader, receipt printer, cash dispenser, and secure keypad.
+
+3) Non-Functional Requirements:
+• Security: Employs end-to-end data encryption (such as AES-256 or Triple DES) for transmitting sensitive credentials.
+• Availability: Designed for 24/7 operational availability with high-uptime targets (e.g., 99.9%).
+• Performance: Rapid transaction processing times, such as quick authentication and fast cash-dispensing triggers.
